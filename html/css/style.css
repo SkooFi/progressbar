@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200&display=swap');
+html {
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+
+body {
+    background: transparent !important;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+}
+
+.progress-container {
+    display: none;
+    z-index: 5;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 15%;
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #00000088;
+    padding: 1em;
+    /* border-radius: 1em; */
+    animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: .8s;
+}
+
+.progress-labels {
+    width: 100%;
+    height: 3vh;
+    line-height: 4vh;
+    text-align: left;
+    position: relative;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.progress-labels div {
+    font-size: 1.3vh;
+    line-height: 2vh;
+    position: relative;
+    color: #ffffff;
+    z-index: 10;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.progress-bar-container {
+    width: 100%;
+    height: .8vh;
+    background: rgba(53, 53, 53, 0.493);
+    text-align: left;
+    overflow: hidden;
+    position: relative;
+    display: block;
+    white-space: nowrap;
+    /* border-radius: 3em; */
+    box-shadow: 0rem 0rem 0.1rem 0.05rem #000000;
+}
+
+.progress-bar {
+    background-color: rgb(255, 255, 255) !important;
+    width: 0%;
+    height: .8vh;
+    /* border-radius: 3em; */
+    transition: width 0.3s;
+    transition-timing-function: ease-out;
+}
